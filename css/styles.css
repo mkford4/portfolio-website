@@ -1,0 +1,281 @@
+/* Colors Used:
+    font-family: 'Playfair Display', serif;
+  font-weight: 600;
+
+  Main Text color = #2a322a
+  Background color = #dddbc6
+  H1 Text color = #093407
+  Secondary Button color = #e5a24b
+*/
+
+/*  CSS variables - key colors */
+:root {
+  --primary-color: #2a322a;
+  --secondary-color: #093407;
+  --background-color: #dddbc6;
+  --purple: #a588c3;
+  --light-purple: #c9c0d3;
+  --dark-purple: #766093;
+  --link-used-color: #05676e;
+  --link-active-color: #489c79;
+  --standard-font-weight: 700;
+  --muddy-yellow: #b49951;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--primary-color);
+
+}
+
+h1 {
+  font-family: 'Yeseva One', serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--standard-font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--standard-font-weight);
+}
+
+a {
+  /* links */
+  color:var(--primary-color);
+  transition: 0.3s font-size;
+}
+
+a:visited {
+  /* visited link */
+  color: var(--link-used-color);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration:none;
+}
+
+main a:hover, a:focus {
+  font-size: 105%;
+}
+
+a:active {
+  /* selected link */
+  color: var(--link-active-color);
+}
+
+button, .button {
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba (0,0,0,0.3);
+  transition: 0.2s opacity, 0.5s background-color, 0.5s color;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+/* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: var(--muddy-yellow);
+}
+
+.button__secondary {
+  background-color: var(--purple);
+  color: #2b2b2b;
+}
+
+.button__secondary:hover {
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+.navigation-list__item--active {
+/* styles the nav item ex. Home without an underline when on that page */
+  text-decoration:none;
+}
+
+.input__secondary {
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba (0,0,0,0.3);
+}
+
+.input__secondary:hover, .input__secondary:focus {
+/* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.profile__portrait {
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  float: left;
+  /* rounded the edges to make profile photo into a circle */
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* The asterisk is the "universal selector" and applies to all HTML elements */
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  border-bottom: 2px solid var(--muddy-yellow);
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: var(--light-purple);
+  width: auto;
+}
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* shorthand looks like: grid-column: 3/3; */
+}
+
+#contact-form {
+  background-color: var(--light-purple);
+  width: auto;
+  padding: 25px;
+}
+
+/* Media Query to adjust sizing for Work Grid */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  /* shared code */
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* Transition, Animation & Transform set ups */
+/* changes cloud colors from blue to white */
+@keyframes color-change {
+  0% /* from */ {
+    fill: #789da8;
+  }
+  100% /* to */ {
+    fill: white;
+  }
+}
+
+.cls-1 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/* moves each cloud one way and another via transform: translate & animation */
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(100px, 85px);
+  }
+}
+
+#cloud_1 {
+  animation: 22s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(150px, 52px);
+  }
+  to {
+    transform: translate(50px, 41px);
+  }
+}
+
+#cloud_2 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.svg-banner {
+  max-width: 100%;
+  margin: 0 auto;
+}
