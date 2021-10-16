@@ -5,6 +5,18 @@
 * Browsers: last 4 version
 */
 
+/* Colors Used:
+    font-family: 'Playfair Display', serif;
+  font-weight: 600;
+
+  Main Text color = #2a322a
+  Background color = #dddbc6
+  H1 Text color = #093407
+  Secondary Button color = #e5a24b
+*/
+
+/*  CSS variables - key colors */
+
 body {
   background-color: #dddbc6;
   font-family: 'Montserrat', sans-serif;
@@ -34,7 +46,6 @@ h3 {
 
 a {
   /* links */
-  color:#2a322a;
   -webkit-transition: 0.3s font-size;
   -o-transition: 0.3s font-size;
   transition: 0.3s font-size;
@@ -117,7 +128,7 @@ button:focus {
 
 .button__secondary {
   background-color: #a588c3;
-  color: #2b2b2b;
+  color: #2a322a;
 }
 
 .button__secondary:hover {
@@ -225,6 +236,7 @@ button:focus {
 .grid__item {
   background-color: #c9c0d3;
   width: auto;
+  text-align: center;
 }
 
 .grid__item:last-child {
@@ -355,4 +367,38 @@ button:focus {
 .svg-banner {
   max-width: 100%;
   margin: 0 auto;
+}
+/* Work Gallery page styling: */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
