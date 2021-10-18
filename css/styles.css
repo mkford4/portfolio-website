@@ -323,3 +323,7 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+
+#return-anchor {
+  text-align: center;
+}
