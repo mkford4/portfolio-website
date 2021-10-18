@@ -73,6 +73,10 @@ a:active {
   color: var(--link-active-color);
 }
 
+a.button {
+  color: white;
+}
+
 button, .button {
   border: none;
   font-family: inherit;
@@ -91,16 +95,17 @@ button:hover, button:focus,
   cursor: pointer;
   opacity: 0.8;
   background-color: var(--muddy-yellow);
+  font-size: 100%;
 }
 
 .button__secondary {
-  background-color: var(--purple);
-  color: var(--primary-color);
+  background-color: var(--dark-purple);
 }
 
 .button__secondary:hover {
-  background-color: var(--dark-purple);
-  color: white;
+  background-color: var(--purple);
+  color: var(--primary-color);
+  opacity: 1;
 }
 
 .navigation-list__item--active {
