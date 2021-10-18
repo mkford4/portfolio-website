@@ -70,6 +70,10 @@ a:active {
   color: #489c79;
 }
 
+a.button {
+  color: white;
+}
+
 button {
   border: none;
   font-family: inherit;
@@ -103,6 +107,7 @@ button:hover {
   cursor: pointer;
   opacity: 0.8;
   background-color: #b49951;
+  font-size: 100%;
 }
 
 button:focus {
@@ -110,6 +115,7 @@ button:focus {
   cursor: pointer;
   opacity: 0.8;
   background-color: #b49951;
+  font-size: 100%;
 }
 
 .button:hover {
@@ -117,6 +123,7 @@ button:focus {
   cursor: pointer;
   opacity: 0.8;
   background-color: #b49951;
+  font-size: 100%;
 }
 
 .button:focus {
@@ -124,16 +131,17 @@ button:focus {
   cursor: pointer;
   opacity: 0.8;
   background-color: #b49951;
+  font-size: 100%;
 }
 
 .button__secondary {
-  background-color: #a588c3;
-  color: #2a322a;
+  background-color: #766093;
 }
 
 .button__secondary:hover {
-  background-color: #766093;
-  color: white;
+  background-color: #a588c3;
+  color: #2a322a;
+  opacity: 1;
 }
 
 .navigation-list__item--active {
@@ -282,7 +290,7 @@ button:focus {
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
@@ -368,12 +376,13 @@ button:focus {
   max-width: 100%;
   margin: 0 auto;
 }
+
 /* Work Gallery page styling: */
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 280px;
 }
 
 div.gallery:hover {
@@ -390,6 +399,18 @@ div.desc {
   text-align: center;
 }
 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.section-header {
+  margin: 5px;
+  float: left;
+  width: 100%;
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
@@ -401,4 +422,14 @@ div.desc {
   .responsive {
     width: 100%;
   }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#return-anchor {
+  text-align: center;
 }
