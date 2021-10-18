@@ -284,6 +284,7 @@ button:hover, button:focus,
   max-width: 100%;
   margin: 0 auto;
 }
+
 /* Work Gallery page styling: */
 div.gallery {
   margin: 5px;
@@ -306,6 +307,18 @@ div.desc {
   text-align: center;
 }
 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.section-header {
+  margin: 5px;
+  float: left;
+  width: 100%;
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
@@ -323,6 +336,7 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
 
 #return-anchor {
   text-align: center;
