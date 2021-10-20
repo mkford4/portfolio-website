@@ -244,6 +244,7 @@ button:focus {
 
 .grid__item {
   background-color: #c9c0d3;
+  width: auto;
   text-align: center;
 }
 

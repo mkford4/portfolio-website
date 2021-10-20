@@ -183,10 +183,12 @@ button:hover, button:focus,
   margin-left: 15px;
 }
 
+/* grid fallback (just grid_item segment) aka for older browsers */
 .grid__item {
     display: inline-block;
     width: 33%;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -195,6 +197,7 @@ button:hover, button:focus,
 
 .grid__item {
   background-color: var(--light-purple);
+  width: auto;
   text-align: center;
 }
 
