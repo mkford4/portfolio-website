@@ -82,7 +82,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba (0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
   -webkit-transition: 0.2s opacity, 0.5s background-color, 0.5s color;
   -o-transition: 0.2s opacity, 0.5s background-color, 0.5s color;
   transition: 0.2s opacity, 0.5s background-color, 0.5s color;
