@@ -1,0 +1,9 @@
+Linters used for project:
+- linter-styleline
+- linter-htmllint
+- linter
+
+Issues found during cross-browsing:
+- Link <a> color had not been set and was automated to bright blue color. Changed to hex value to match website aesthetic.
+- On work.html, I accidentally had deleted the grid_item width:auto. Easy fix.
+- No other issues were determined.
