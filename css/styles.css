@@ -16,6 +16,7 @@
   --purple: #a588c3;
   --light-purple: #c9c0d3;
   --dark-purple: #766093;
+  --link-color: #9c4895;
   --link-used-color: #05676e;
   --link-active-color: #489c79;
   --standard-font-weight: 700;
@@ -51,6 +52,7 @@ h3 {
 
 a {
   /* links */
+  color: var(--link-color);
   transition: 0.3s font-size;
 }
 

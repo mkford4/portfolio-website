@@ -46,6 +46,7 @@ h3 {
 
 a {
   /* links */
+  color: #9c4895;
   -webkit-transition: 0.3s font-size;
   -o-transition: 0.3s font-size;
   transition: 0.3s font-size;
@@ -96,7 +97,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba (0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
   -webkit-transition: 0.2s opacity, 0.5s background-color, 0.5s color;
   -o-transition: 0.2s opacity, 0.5s background-color, 0.5s color;
   transition: 0.2s opacity, 0.5s background-color, 0.5s color;
@@ -157,7 +158,7 @@ button:focus {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba (0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
 }
 
 .input__secondary:hover, .input__secondary:focus {
@@ -243,7 +244,6 @@ button:focus {
 
 .grid__item {
   background-color: #c9c0d3;
-  width: auto;
   text-align: center;
 }
 
@@ -256,6 +256,7 @@ button:focus {
       grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
+
   /* shorthand looks like: grid-column: 3/3; */
 }
 
