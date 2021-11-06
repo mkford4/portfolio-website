@@ -1,0 +1,49 @@
+/* Main media queries & Animations/keyframes for portfolio website */
+
+/* Transition, Animation & Transform set ups */
+/* changes cloud colors from blue to white */
+@keyframes color-change {
+  0% /* from */ {
+    fill: #789da8;
+  }
+  100% /* to */ {
+    fill: white;
+  }
+}
+
+.cls-1 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/* moves each cloud one way and another via transform: translate & animation */
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(100px, 85px);
+  }
+}
+
+#cloud_1 {
+  animation: 22s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(150px, 52px);
+  }
+  to {
+    transform: translate(50px, 41px);
+  }
+}
+
+#cloud_2 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* sizing for entire svg animation */
+.svg-banner {
+  max-width: 100%;
+  margin: 0 auto;
+}
