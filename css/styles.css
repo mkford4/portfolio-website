@@ -183,64 +183,10 @@ button:hover, button:focus,
   margin-left: 15px;
 }
 
-/* grid fallback (just grid_item segment) aka for older browsers */
-.grid__item {
-    display: inline-block;
-    width: 33%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid__item {
-  background-color: var(--light-purple);
-  width: auto;
-  text-align: center;
-}
-
-.grid__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-
-  /* shorthand looks like: grid-column: 3/3; */
-}
-
 #contact-form {
   background-color: var(--light-purple);
   width: auto;
   padding: 25px;
-}
-
-/* Media Query to adjust sizing for Work Grid */
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  /* shared code */
-  .grid {
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 26px;
-  }
 }
 
 /* Transition, Animation & Transform set ups */
