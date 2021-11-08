@@ -1,4 +1,17 @@
 /* Main media queries & Animations/keyframes for portfolio website */
+@media only screen and (max-width: 700px) {
+  .profile {
+    width: 49.99999%;
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 
 /* Transition, Animation & Transform set ups */
 /* changes cloud colors from blue to white */
