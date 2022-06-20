@@ -1,0 +1,18 @@
+/* CSS styling for Contact page */
+
+label {
+width: 250px;
+float: left;
+display: block;
+}
+
+button.input {
+  overflow: visible;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+form {
+  border-radius: 10px;
+  border: 2px solid #b49951;
+}

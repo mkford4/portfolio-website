@@ -1,0 +1,75 @@
+/* Work page CSS stylings */
+
+:root {
+  --primary-color: #2a322a;
+  --secondary-color: #093407;
+  --background-color: #dddbc6;
+  --purple: #a588c3;
+  --light-purple: #c9c0d3;
+  --dark-purple: #766093;
+  --link-color: #9c4895;
+  --link-used-color: #05676e;
+  --link-active-color: #489c79;
+  --standard-font-weight: 700;
+  --muddy-yellow: #b49951;
+}
+
+/* Grid styling */
+.grid__item {
+  border-radius: 6px;
+  padding: 0px 15px 10px 10px;
+  border: 2px solid #b49951;
+}
+
+/* grid fallback (just grid__item segment) aka for older browsers */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: var(--light-purple);
+  width: auto;
+  text-align: center;
+}
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* shorthand looks like: grid-column: 3/3; */
+}
+
+/* Media Query to adjust sizing for Work Grid */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  /* shared code */
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}

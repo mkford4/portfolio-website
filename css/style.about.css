@@ -1,0 +1,16 @@
+/* styling for About page */
+
+td {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.td__center {
+  text-align: left;
+}
+
+/* Attempt to provide more space between table & resume button on About page
+#resume-button {
+  margin: 50px 0px 0px 0px;
+}
+*/
