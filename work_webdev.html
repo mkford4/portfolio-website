@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Dev | Monika Ford-Portfolio</title>
+  <link rel="icon" type="image/png" href="./img/mf_favicon.svg" sizes="16x16">
+  <!-- Adding Montserrat & Playfair Display Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheet insertion -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="index.html">
+      <img src="img/logos/mf_logo.svg" width="120" alt="Mon Ford logo" class="page-header__item">
+    </a>
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation" class="nav-item">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+        </li>
+        <li role="presentation" class="nav-item">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation" class="nav-item">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation" class="nav-item">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="profile">
+    <!--main text/body-->
+    <!-- Project 1: Bechflix Site -->
+    <div class="project-container">
+      <div class="section-header">
+        <h1>Project 1: Movie Database App & API</h1>
+        <h3>Two projects in one, this "Bechflix" app that uses a REST API to display movie information to the user as
+          well
+          as allow for certain user actions.</h3>
+        <h3><span class="bolded">Back-end: "movie_api" - </span>
+          The server-side component of an IMDb-like web application.
+          API is a Node.js & Express application using REST architecture with URL endpoints for all user action
+          features.
+          The database was built using MongoDB, modeled with Mongoose and deployed via Heroku. See GitHub README file
+          for
+          further details on app features.</h3>
+        <a href="https://github.com/mkford4/movie_api">myFlix API GitHub</a>
+        <br />
+        <h3><span class="bolded">Front-end: "myFlix-client" - </span>
+          A client-side application based on a RESTful API that displays movie information and allows users to
+          register/log-in, view movie details, add movies to a Favorites list and updated profile information.
+          Built using React & Bootstrap, along with Redux, Axios & Parcel.</h3>
+        <a href="https://github.com/mkford4/myFlix-client">Bechflix App GitHub</a>
+      </div>
+      <br />
+
+      <div class="screenshot">
+        <a target="_blank" href="img/portfolio/Bechflix-screenshot.png">
+          <img src="img/portfolio/Bechflix-screenshot.png" alt="Screenshot of Bechlix MainView" width="720">
+        </a>
+        <div class="desc">
+          <!--Add a description of the image here-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Pokedex JS App -->
+    <div class="project-container">
+      <div class="section-header">
+        <h1>Project 2: Pokedex - Simple JS App</h1>
+        <h3>A basic JavaScript application that loads the Pokedex API for viewing.</h3>
+        <h3><span class="bolded">Overview - </span>
+          The application uses HTML, CSS & JavaScript functions along with polyfills, bootstrap & jQuery with modals,
+          buttons & a navbar.
+          Views a list of items in a grid display and, upon user action, modal pop-ups display further info details.
+        </h3>
+        <a href="https://github.com/mkford4/smart-dex-app">Pokedex App GitHub</a>
+        <br />
+
+        <div class="screenshot">
+          <a target="_blank" href="img/portfolio/Pokedex-screenshot.png">
+            <img src="img/portfolio/Pokedex-screenshot.png" alt="Screenshot of Pokedex App" width="720">
+          </a>
+          <div class="desc">
+            <!--Add a description of the image here-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Meet App -->
+    <div class="project-container">
+      <div class="section-header">
+
+        <h1>Project 3: Meet App</h1>
+        <h3>A 'meet-up' application that uses Google Calendar API to display event details for users in their searched
+          city.</h3>
+        <h3><span class="bolded">Overview - </span>
+          A serverless PWA built with React using a TDD technique that fetches data from the Google Calendar API and
+          implements OAuth2 authentication for user login.
+          User actions include searching for a specific city, or clicking "see all cities", plus editing how many events
+          are displayed at a time.
+          Also includes two charts to effectively display events and event types for users.
+          Deployed with GitHub Pages.
+        </h3>
+        <a href="https://github.com/mkford4/meet">Meet App GitHub</a>
+        <br />
+
+        <div class="screenshot">
+          <a target="_blank" href="img/portfolio/Bechflix-screenshot.png">
+            <img src="img/portfolio/Bechflix-screenshot.png" alt="Screenshot of Meet App Main Page" width="720">
+          </a>
+          <div class="desc">
+            <!--Add a description of the image here-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/mkford4" target="_blank">
+          <img src="img/icons/github_icon.svg" alt="Github">
+        </a>
+        <a href="https://www.instagram.com/mkford4" target="_blank">
+          <img src="img/icons/instagram_icon.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/monika-ford-52b5abb5/" target="_blank">
+          <img src="img/icons/linkedin_icon.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
