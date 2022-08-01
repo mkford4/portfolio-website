@@ -16,7 +16,7 @@
 
 /* Grid styling */
 .grid__item {
-  border-radius: 6px;
+  border-radius: 16px;
   padding: 0px 15px 10px 10px;
   border: 2px solid #b49951;
 }
@@ -29,7 +29,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -39,10 +39,11 @@
   text-align: center;
 }
 
+/* reintroduce when work.html has another grid__item
 .grid__item:last-child {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  /* shorthand looks like: grid-column: 3/3; */
 }
+*/
