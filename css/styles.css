@@ -150,6 +150,14 @@ button:focus,
   margin: 0 auto;
 }
 
+.profile__portrait {
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  float: right;
+  border-radius: 50%;
+}
+
 /* The asterisk is the "universal selector" and applies to all HTML elements */
 * {
   box-sizing: border-box;

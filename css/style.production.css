@@ -187,6 +187,14 @@ button:focus {
   margin: 0 auto;
 }
 
+.profile__portrait {
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  float: left;
+  border-radius: 50%;
+}
+
 /* The asterisk is the "universal selector" and applies to all HTML elements */
 * {
   -webkit-box-sizing: border-box;
