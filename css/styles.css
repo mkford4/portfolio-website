@@ -61,12 +61,14 @@ a:visited {
   color: var(--link-used-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
-  text-decoration:none;
+  text-decoration: none;
 }
 
-main a:hover, a:focus {
+main a:hover,
+a:focus {
   font-size: 105%;
 }
 
@@ -79,7 +81,8 @@ a.button {
   color: white;
 }
 
-button, .button {
+button,
+.button {
   border: none;
   font-family: inherit;
   background-color: var(--primary-color);
@@ -87,13 +90,15 @@ button, .button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity, 0.5s background-color, 0.5s color;
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
-/* lets the mouse appear as a hand when hovering over the button */
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   opacity: 0.8;
   background-color: var(--muddy-yellow);
@@ -111,8 +116,8 @@ button:hover, button:focus,
 }
 
 .navigation-list__item--active {
-/* styles the nav item ex. Home without an underline when on that page */
-  text-decoration:none;
+  /* styles the nav item ex. Home without an underline when on that page */
+  text-decoration: none;
 }
 
 .input__secondary {
@@ -123,23 +128,14 @@ button:hover, button:focus,
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.input__secondary:hover, .input__secondary:focus {
-/* lets the mouse appear as a hand when hovering over the button */
+.input__secondary:hover,
+.input__secondary:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   opacity: 0.8;
-}
-
-.profile__portrait {
-  width: 250px;
-  height: auto;
-  margin-right: 40px;
-  /* makes the photo layer with text but to the left */
-  float: left;
-  /* rounded the edges to make profile photo into a circle */
-  border-radius: 50%;
 }
 
 .page-footer {
@@ -193,10 +189,17 @@ button:hover, button:focus,
 /* Transition, Animation & Transform set ups */
 /* changes cloud colors from blue to white */
 @keyframes color-change {
-  0% /* from */ {
+  0%
+
+  /* from */
+    {
     fill: #789da8;
   }
-  100% /* to */ {
+
+  100%
+
+  /* to */
+    {
     fill: white;
   }
 }
@@ -210,6 +213,7 @@ button:hover, button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(100px, 85px);
   }
@@ -223,6 +227,7 @@ button:hover, button:focus,
   from {
     transform: translate(150px, 52px);
   }
+
   to {
     transform: translate(50px, 41px);
   }

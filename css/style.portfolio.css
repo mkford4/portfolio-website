@@ -12,42 +12,37 @@
   --muddy-yellow: #b49951;
 }
 
-/* Work Gallery page styling: */
+/*------------GRID----------------*/
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 280px;
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 50px 50px;
+
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.grid-item {
+  background-color: var(--light-purple);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  border-radius: 16px;
+  padding: 2px 20px 20px 20px;
+  border: 1px solid #b49951;
+  display: inline-block;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
+.grid-item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-.section-header {
-  margin: 5px;
-  float: left;
-  width: 100%;
-}
-
-/* Insert future code here
+/*---------------GRID end---------------*/
 
 /* Media query for work Gallery page*/
 @media only screen and (max-width: 700px) {
@@ -78,6 +73,7 @@ div.desc {
 }
 
 .screenshot img {
+  width: 400px;
   margin: 14px 0px 0px 0px;
   outline-style: dotted;
   outline-color: var(--purple);

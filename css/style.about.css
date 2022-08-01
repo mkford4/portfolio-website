@@ -1,4 +1,23 @@
+:root {
+  --primary-color: #2a322a;
+  --secondary-color: #093407;
+  --background-color: #dddbc6;
+  --purple: #a588c3;
+  --light-purple: #c9c0d3;
+  --dark-purple: #766093;
+  --link-color: #9c4895;
+  --link-used-color: #05676e;
+  --link-active-color: #489c79;
+  --standard-font-weight: 700;
+  --muddy-yellow: #b49951;
+}
+
 /* styling for About page */
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 td {
   padding: 0 10px;
@@ -6,11 +25,45 @@ td {
 }
 
 .td__center {
-  text-align: left;
+  text-align: center;
 }
 
-/* Attempt to provide more space between table & resume button on About page
-#resume-button {
-  margin: 50px 0px 0px 0px;
+
+table {
+  margin-bottom: 40px;
 }
-*/
+
+.skills-table {
+  background-color: var(--light-purple);
+  width: auto;
+  min-height: auto;
+  border-radius: 16px;
+  padding: 2px 20px 20px 20px;
+  border: 2px solid #b49951;
+}
+
+.images-container {
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.about__img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  white-space: nowrap;
+  border-radius: 50%;
+}
+
+.ul__img {
+  white-space: nowrap;
+}
+
+.ul__img .li__img {
+  list-style: none;
+  display: inline;
+}
+
+.about__section {
+  text-align: justify;
+}

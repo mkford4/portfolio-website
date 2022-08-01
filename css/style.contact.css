@@ -1,9 +1,9 @@
 /* CSS styling for Contact page */
 
 label {
-width: 250px;
-float: left;
-display: block;
+  width: 250px;
+  float: left;
+  display: block;
 }
 
 button.input {
@@ -15,4 +15,12 @@ button.input {
 form {
   border-radius: 10px;
   border: 2px solid #b49951;
+}
+
+.photo {
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  float: left;
+  border-radius: 50%;
 }
