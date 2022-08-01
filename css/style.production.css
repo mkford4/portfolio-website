@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -46,7 +46,7 @@ h3 {
 
 a {
   /* links */
-  color: #584920;
+  color: #9c4895;
   -webkit-transition: 0.3s font-size;
   -o-transition: 0.3s font-size;
   transition: 0.3s font-size;
@@ -170,15 +170,6 @@ button:focus {
   opacity: 0.8;
 }
 
-.profile__portrait {
-  width: 250px;
-  height: auto;
-  margin-right: 40px;
-  float: left;
-  /* rounded the edges to make profile photo into a circle */
-  border-radius: 50%;
-}
-
 .page-footer {
   clear: both;
   display: -webkit-box;
@@ -233,79 +224,10 @@ button:focus {
   margin-left: 15px;
 }
 
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid__item {
-  background-color: #c9c0d3;
-  width: auto;
-  text-align: center;
-}
-
-.grid__item:last-child {
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-  -ms-grid-column-span: 0;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 2;
-  grid-row-end: 3;
-
-  /* shorthand looks like: grid-column: 3/3; */
-}
-
 #contact-form {
   background-color: #c9c0d3;
   width: auto;
   padding: 25px;
-}
-
-/* Media Query to adjust sizing for Work Grid */
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-
-  /* shared code */
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  .grid-item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
 }
 
 /* Transition, Animation & Transform set ups */
@@ -438,8 +360,6 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
-
-/* ----------- */
 
 .section-header {
   margin: 5px;
