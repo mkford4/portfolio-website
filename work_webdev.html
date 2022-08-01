@@ -44,117 +44,162 @@
   </header>
 
 
-  <main class="profile">
-    <!--main text/body-->
-    <!-- Project 1: Bechflix Site -->
-    <div class="project-container">
-      <div class="section-header">
-        <h1>Project 1: Movie Database App & API</h1>
-        <h3>Two projects in one, this "Bechflix" app that uses a REST API to display movie information to the user as
-          well
-          as allow for certain user actions.</h3>
-        <h3><span class="bolded">Back-end: "movie_api" - </span>
-          The server-side component of an IMDb-like web application.
-          API is a Node.js & Express application using REST architecture with URL endpoints for all user action
-          features.
-          The database was built using MongoDB, modeled with Mongoose and deployed via Heroku. See GitHub README file
-          for
-          further details on app features.</h3>
-        <a href="https://github.com/mkford4/movie_api">myFlix API GitHub</a>
-        <br />
-        <h3><span class="bolded">Front-end: "myFlix-client" - </span>
-          A client-side application based on a RESTful API that displays movie information and allows users to
-          register/log-in, view movie details, add movies to a Favorites list and updated profile information.
-          Built using React & Bootstrap, along with Redux, Axios & Parcel.</h3>
-        <a href="https://github.com/mkford4/myFlix-client">Bechflix App GitHub</a>
-      </div>
-      <br />
+  <section class="profile">
 
-      <div class="screenshot">
-        <a target="_blank" href="img/portfolio/Bechflix-screenshot.png">
-          <img src="img/portfolio/Bechflix-screenshot.png" alt="Screenshot of Bechlix MainView" width="720">
-        </a>
-        <div class="desc">
-          <!--Add a description of the image here-->
-          Screenshot shows MainView of app which includes the Navbar, search filter and Movie cards that open for
-          further details.
-        </div>
-      </div>
+    <div class="page-title">
+      <h1>Web Development</h1>
     </div>
 
-    <!-- Project 2: Pokedex JS App -->
-    <div class="project-container">
-      <div class="section-header">
-        <h1>Project 2: Pokedex - Simple JS App</h1>
-        <h3>A basic JavaScript application that loads the Pokedex API for viewing.</h3>
-        <h3><span class="bolded">Overview - </span>
-          The application uses HTML, CSS & JavaScript functions along with polyfills, bootstrap & jQuery with modals,
-          buttons & a navbar.
-          Views a list of items in a grid display and, upon user action, modal pop-ups display further info details.
-        </h3>
-        <a href="https://github.com/mkford4/smart-dex-app">Pokedex App GitHub</a>
-        <br />
+    <!-- React myFlix -->
+    <div class="grid">
+      <div class="section-header grid-item">
+        <h2>React App: Bechflix</h2>
 
         <div class="screenshot">
-          <a target="_blank" href="https://mkford4.github.io/smart-dex-app/">
-            <img src="img/portfolio/Pokedex-screenshot.png" alt="Screenshot of Pokedex App" width="720">
+          <a target="_blank" href="img/portfolio/Bechflix-screenshot.png">
+            <img src="img/portfolio/Bechflix-screenshot.png" alt="Screenshot of Bechlix App" width="720">
           </a>
-          <div class="desc">
-            <!--Add a description of the image here-->
-            Screenshot shows Pokedex app with a modal open displaying further information from the API. Click to view
-            live app.
-          </div>
         </div>
+
+        <p>A React application that displays movie information to the user and features functionality for users to
+          register, login, view movie details, add movies to a Favorites list, update profile information and delete
+          their account.
+          <br />
+          Built using React & Bootstrap, along with Redux, Axios & Parcel - uses backend 'movie_api' with MongoDB.
+        </p>
+
+        <a href="https://github.com/mkford4/myFlix-client">See project on GitHub</a>
       </div>
     </div>
 
-    <!-- Project 3: Meet App -->
-    <div class="project-container">
-      <div class="section-header">
+    <!-- Pokedex JS App -->
+    <div class="grid">
+      <div class="section-header grid-item">
+        <h2>Simple JS App: Pokedex</h1>
+          <div class="screenshot">
+            <a target="_blank" href="https://mkford4.github.io/smart-dex-app/">
+              <img src="img/portfolio/Pokedex-screenshot.png" alt="Screenshot of Pokedex App" width="720">
+            </a>
+          </div>
 
-        <h1>Project 3: Meet App</h1>
-        <h3>A 'meet-up' application that uses Google Calendar API to display event details for users in their searched
-          city.</h3>
-        <h3><span class="bolded">Overview - </span>
-          A serverless PWA built with React using a TDD technique that fetches data from the Google Calendar API and
-          implements OAuth2 authentication for user login.
-          User actions include searching for a specific city, or clicking "see all cities", plus editing how many events
-          are displayed at a time.
-          Also includes two charts to effectively display types of events (pie-chart) & number of events per city
-          (scatterplot).
-        </h3>
-        <a href="https://github.com/mkford4/meet">Meet App GitHub</a>
-        <br />
+          <p>A basic JavaScript application that loads the Pokedex API for viewing. The application uses HTML, CSS &
+            JavaScript functions along with polyfills, bootstrap & jQuery with modals,
+            buttons & a navbar.</p>
+
+          <a href="https://mkford4.github.io/smart-dex-app/">View live application</a>
+          <br />
+          <a href="https://github.com/mkford4/smart-dex-app">See project on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Meet App -->
+    <div class="grid">
+      <div class="section-header grid-item">
+
+        <h2>PWA & React App: Meet</h2>
 
         <div class="screenshot">
           <a target="_blank" href="https://mkford4.github.io/meet/">
             <img src="img/portfolio/Meet-screenshot.png" alt="Screenshot of Meet App Main Page" width="720">
           </a>
-          <div class="desc">
-            <!--Add a description of the image here-->
-            Screenshot of Meet App shows main features including CitySearch, two charts & the list of events. Click to
-            view live app.
-          </div>
         </div>
+
+        <p>A 'meet-up' application that uses Google Calendar API to display event details for users in their searched
+          city. User actions include searching for a specific city, or clicking "see all cities", plus editing how
+          many
+          events
+          are displayed at a time. Also includes two charts to effectively display types of events (pie-chart) &
+          number
+          of events per city
+          (scatterplot).</p>
+
+        <a href="https://mkford4.github.io/meet/">View live application</a>
+        <br />
+        <a href="https://github.com/mkford4/meet">See project on GitHub</a>
+
       </div>
     </div>
 
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a href="https://github.com/mkford4" target="_blank">
-          <img src="img/icons/github_icon.svg" alt="Github">
-        </a>
-        <a href="https://www.instagram.com/mkford4" target="_blank">
-          <img src="img/icons/instagram_icon.svg" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/in/monika-ford-52b5abb5/" target="_blank">
-          <img src="img/icons/linkedin_icon.svg" alt="LinkedIn">
-        </a>
-      </div>
-    </footer>
+    <!-- movie_api -->
+    <div class="grid">
+      <div class="section-header grid-item">
+        <h2>Restful API: movie_api</h2>
 
-    <script src="js/tota11y.min.js"></script>
+        <div class="screenshot">
+          <img src="img/portfolio/api-get-movies.png"
+            alt="Screenshot of Postman API database testing for GET all movies" width="720">
+        </div>
+
+        <p>The server-side component for Bechflix.
+          API is a Node.js & Express application using REST architecture with URL endpoints for all user action
+          features. Built using MongoDB, modeled with Mongoose and deployed via Heroku.
+        </p>
+
+        <a href="https://github.com/mkford4/movie_api">See project on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Chat App -->
+    <div class="grid">
+      <div class="section-header grid-item">
+        <h2>React Native App: Chat App</h2>
+
+        <div class="screenshot">
+          <a target="_blank" href="img/portfolio/chat-app-screenshot.jpg">
+            <img src="img/portfolio/chat-app-screenshot.jpg"
+              alt="Screenshot of Chat App, showing 4 images of various chat options" width="720">
+          </a>
+        </div>
+
+        <p>A chat app developed using React Native, Expo and Gifted Chat for use on both Android and iOS mobile
+          devices. Includes custom actions for user to send photos and their location. Stored with Google Firestore
+          (v7).</p>
+
+        <a href="https://github.com/mkford4/chat-app">See project on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Angular myFlix -->
+    <div class="grid">
+      <div class="section-header grid-item">
+
+        <h2>Angular App: Bechflix</h2>
+
+        <div class="screenshot">
+          <a target="_blank" href="img/portfolio/angular-screenshot.png">
+            <img src="img/portfolio/angular-screenshot.png" alt="Screenshot of Angular movie view" width="720">
+          </a>
+
+        </div>
+        <p>The client-side for an application called Bechflix based on its existing server-side code (movie_api) using
+          Angular.
+          The goal of this project was to recreate the Bechflix frontend app using Angular instead of React.
+        </p>
+        <!--<a href="https://mkford4.github.io/myFlix-Angular-client">View live application</a>-->
+        <a href="https://github.com/mkford4/myFlix-Angular-client">See project on GitHub</a>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/mkford4" target="_blank">
+        <img src="img/icons/github_icon.svg" alt="Github">
+      </a>
+      <a href="https://www.instagram.com/mkford4" target="_blank">
+        <img src="img/icons/instagram_icon.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/monika-ford-52b5abb5/" target="_blank">
+        <img src="img/icons/linkedin_icon.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
